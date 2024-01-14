@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;  
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .brand-name {
+  margin-left: 10px;
+  color: #146476;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.heading {
+ color: #146476;
+ font-weight: bold;
+}
+.nav {
+  float: right;
+  margin-top: 26px;
+}
+
+    .container {
+      position: absolute;
+      width:  calc(100vw - 100px);
+      height: 150px;
+	  margin-top: 20%;
+      box-sizing: border-box;
+    }
+
+    .grey-container {
+      background-color: #f1f1f1;
+      top: -120px;
+      left: 80px;
+	  height: calc(100vh - 150px);
+	  width: calc(100vw - 120px);
+      z-index: 1;
+    }
+
+    .yellow-container {
+      background-color: #fadc00;
+      top: -50px;      
+	  height: calc(100vh - 150px);
+	  background-image: url(boomerang.png);
+	  background-repeat: no-repeat;
+      z-index: 2;
+	  background-size: 46% auto;
+    }
+    
+    .white-container {
+      background-color: #ffffff;
+      top: -150px;
+      left: 70%;
+	  height: calc(100vh - 280px);
+	  width: 36%;
+	  padding: 25px;
+      z-index: 1;
+    }
+footer {
+    background-color: #f1f1f1;
+    color: #070707;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	z-index: 3;	
+}
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">
+  <img src="tantum logo.png" alt="TANTUM Logo">
+  <span class="brand-name">TANTUM PROJECTS</span></a>
+  <div class="nav">
+    <a href="#">HOME</a>	
+   <a href="#">ABOUT US</a>
+    <a href="#">WHAT WE DO</a>
+    <a href="#">PROJECTS</a>
+    <a href="#">BLOGS</a>
+    <a href="#">CONTACTS</a>
+  </div>
+</div>
+<div class="container grey-container">
+</div>
+
+<div class="container yellow-container">
+    <div class="container white-container">
+	 <div class="heading">Throw Your First Boomerang Today and Prepare to Catch the Profits</div>
+		  <p>Exclusive properties deals that are not are notavailable through traditional means unlock.</p>
+  </div>
+  </div>
+<footer>
+        <p>&copy; 2024 TANTUM. All rights reserved.</p>
+ </footer>
+
+</body>
+</html>
